@@ -822,7 +822,7 @@ function examCard(key,code,title){
     <h3>${esc(title)}</h3>
     <p class="exam-desc">${esc(e.subtitle)} · ${e.questions.length} soal</p>
     <div class="meta"><span class="chip">${e.questions.length} soal</span><span class="chip">${e.durationMinutes} menit</span><span class="chip">${done?'Terkunci':'Nilai tidak ditampilkan'}</span></div>
-    ${done?`<div class="locked-note">Sudah dikerjakan. Nilai peserta tidak ditampilkan.</div><button class="btn btn-soft" disabled>Selesai</button>`:`<button class="btn btn-primary" data-start="${key}">Mulai Ujian</button>`}
+    ${done?`<div class="locked-note">Sudah dikerjakan. Mohon menunggu pengumuman selanjutnya.</div><button class="btn btn-soft" disabled>Selesai</button>`:`<button class="btn btn-primary" data-start="${key}">Mulai Ujian</button>`}
   </div>`
 }
 
