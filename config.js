@@ -12,8 +12,9 @@ window.PMB_CONFIG = {
     micOptional: true,
     cameraRequired: false,
     micRequired: false,
-    fullscreenRequired: false,
-
+    fullscreenRequired: true,
+    fullscreenOnMobile: false,
+    
     // false = paling aman untuk 500 peserta, hanya hasil akhir yang dikirim.
     // true = kirim event penting ke Google Sheets; gunakan hanya jika Sheets sudah kuat dan peserta tidak terlalu banyak.
     syncActivities: false,
