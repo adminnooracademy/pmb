@@ -1,6 +1,6 @@
 window.PMB_CONFIG = {
   // Isi dengan Web App URL Google Apps Script setelah deploy.
-  sheetsWebAppUrl: "https://script.google.com/macros/s/AKfycbwIPTztQzhLxMe_FTGBCm0apZjqvV_uMIeuES4NeK1QgWTQGKxq9x_PeVkRlnCljX1V/exec",
+  sheetsWebAppUrl: "",
 
   // Samakan dengan password admin di database/users.js dan Script Property ADMIN_PASSWORD di Google Apps Script.
   // Catatan: karena website statis, nilai ini tetap bisa dibaca dari source code.
