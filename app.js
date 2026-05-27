@@ -183,7 +183,7 @@ async function ensureMonitoringReady(selectedExam){
   if(cfg.fullscreenRequired) mediaText.push('ujian akan dibuka dalam mode fullscreen bila perangkat mendukung');
   const ok=await showActionModal({
     title:'Persiapan Monitoring Ringan',
-    html:`<p>Sebelum mulai <b>${esc(selectedExam.title)}</b>, sistem akan mengaktifkan monitoring ringan.</p><div class="modal-info-box">${mediaText.length?mediaText.map(esc).join('<br>'):'Monitoring kamera/mic tidak digunakan pada konfigurasi ini.'}</div><p class="modal-warning">Sistem hanya mencatat indikator seperti keluar tab, keluar fullscreen, copy/paste, status kamera/mic. Sistem tidak dapat mengetahui aplikasi lain yang dibuka peserta dan tidak merekam video/audio penuh.</p>`,
+    html:`<p>Sebelum mulai <b>${esc(selectedExam.title)}</b>, sistem akan mengaktifkan monitoring ringan.</p><div class="modal-info-box">${mediaText.length?mediaText.map(esc).join('<br>'):'Monitoring kamera/mic tidak digunakan pada konfigurasi ini.'}</div><p class="modal-warning">Setiap aktivitas yang dilakuakn peserta selama ujian online akan diketahui oleh sistem, pastikan anda layak berjuang di tempat ini.</p>`,
     confirmText:'Saya Mengerti, Mulai',
     cancelText:'Batal'
   });
@@ -839,7 +839,7 @@ function examCard(key,code,title){
     <h3>${esc(title)}</h3>
     <p class="exam-desc">${esc(e.subtitle)} · ${e.questions.length} soal</p>
     <div class="meta"><span class="chip">${e.questions.length} soal</span><span class="chip">${e.durationMinutes} menit</span><span class="chip">${done?'Terkunci':'Nilai tidak ditampilkan'}</span></div>
-    ${done?`<div class="locked-note">Sudah dikerjakan. Nilai peserta tidak ditampilkan.</div><button class="btn btn-soft" disabled>Selesai</button>`:`<button class="btn btn-primary" data-start="${key}">Mulai Ujian</button>`}
+    ${done?`<div class="locked-note">Sudah dikerjakan. Perbanyak doa dan Tawakal.</div><button class="btn btn-soft" disabled>Selesai</button>`:`<button class="btn btn-primary" data-start="${key}">Mulai Ujian</button>`}
   </div>`
 }
 
