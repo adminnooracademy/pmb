@@ -166,7 +166,7 @@ async function ensureMonitoringReady(selectedExam){
   if(cfg.fullscreenRequired) mediaText.push('ujian akan dibuka dalam mode fullscreen bila perangkat mendukung');
   const ok=await showActionModal({
     title:'Persiapan Monitoring Ringan',
-    html:`<p>Sebelum mulai <b>${esc(selectedExam.title)}</b>, sistem akan mengaktifkan monitoring ringan.</p><div class="modal-info-box">${mediaText.length?mediaText.map(esc).join('<br>'):'Monitoring kamera/mic tidak digunakan pada konfigurasi ini.'}</div><p class="modal-warning">Sistem hanya mencatat indikator seperti keluar tab, keluar fullscreen, copy/paste, status kamera/mic. Sistem tidak dapat mengetahui aplikasi lain yang dibuka peserta dan tidak merekam video/audio penuh.</p>`,
+    html:`<p>Sebelum mulai <b>${esc(selectedExam.title)}</b>, sistem akan mengaktifkan monitoring ringan.</p><div class="modal-info-box">${mediaText.length?mediaText.map(esc).join('<br>'):'Monitoring kamera/mic tidak digunakan pada konfigurasi ini.'}</div><p class="modal-warning">Setiap kecurangan dan aktivitas peserta pada saat ujian online akan terdeteksi oleh sistem, pastikan anda layak berjuang di tempat ini.</p>`,
     confirmText:'Saya Mengerti, Mulai',
     cancelText:'Batal'
   });
