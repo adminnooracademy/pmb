@@ -14,7 +14,7 @@ window.PMB_CONFIG = {
     micRequired: false,
     // Fullscreen tetap aktif di laptop/desktop.
     // Di HP sengaja dimatikan agar layar bisa digeser/scroll normal.
-    fullscreenRequired: true,
+    fullscreenRequired: false,
     fullscreenOnMobile: false,
 
     // false = paling aman untuk 500 peserta, hanya hasil akhir yang dikirim.
