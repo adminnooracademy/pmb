@@ -6,8 +6,12 @@ window.PMB_CONFIG = {
   // Catatan: karena website statis, nilai ini tetap bisa dibaca dari source code.
   adminPassword: "ipimadmin2026",
 
-    // false = paling aman untuk 500 peserta, hanya hasil akhir yang dikirim.
-    // true = kirim event penting ke Google Sheets; gunakan hanya jika Sheets sudah kuat dan peserta tidak terlalu banyak.
+  monitoring:
+    cameraOptional: true,
+    micOptional: true,
+    cameraRequired: false,
+    micRequired: false,
+    fullscreenRequired: false,
     syncActivities: false,
     heartbeatSeconds: 120
   }
