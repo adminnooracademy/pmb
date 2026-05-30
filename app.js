@@ -4,7 +4,7 @@ const PMB_APP_CONFIG = window.PMB_CONFIG || {};
 const ADMIN_ACCOUNT = USERS.find(u => u.role === 'admin') || {username:'admin', name:'Administrator PMB', role:'admin'};
 const ADMIN_PASSWORD = PMB_APP_CONFIG.adminPassword || ADMIN_ACCOUNT.password || 'ipimadmin2026';
 const CANDIDATE_PASSWORDS = Array.from(new Set([
-  PMB_APP_CONFIG.candidatePassword || 'ipim2026',
+  PMB_APP_CONFIG.candidatePassword || 'selesai2026',
   ...(USERS.filter(u => u.role === 'candidate').map(u => u.password))
 ].filter(Boolean)));
 let adminAutoSyncDone = false;
