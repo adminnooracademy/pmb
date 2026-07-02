@@ -32,25 +32,39 @@
           <div class="hero-banner"><img src="assets/banner-kampus-pemimpin.png" alt="Kampus Pemimpin Masa Depan"></div>
         </div>
       </aside>
+
       <section class="login-side">
         <div class="logo-row">
           <div class="logo-mark"><img src="assets/logo-stipi-maghfirah.png" alt="Logo STIPI Maghfirah"></div>
           <div><h2>STIPI Maghfirah</h2><small>Portal Ujian PMB 2026</small></div>
         </div>
+
         <h2 class="login-title">Masuk ke Sistem Ujian</h2>
-        <p class="login-subtitle">Gunakan username dan password yang diberikan oleh panitia. Pastikan identitas akun sesuai sebelum memulai ujian.</p>
+        <p class="login-subtitle">Masukkan password akses dari panitia. Isi nama dan nomor ujian.</p>
+
         <form id="loginForm">
-          <label for="username">Username</label>
-          <input id="username" class="input" autocomplete="username" placeholder="Masukkan username" required>
-          <label for="password">Password</label>
-          <input id="password" class="input" type="password" autocomplete="current-password" placeholder="Masukkan password" required>
-          <button class="btn btn-primary full" type="submit">Masuk ke Ujian</button>
+          <label for="password">Password Akses</label>
+          <div class="password-field">
+            <input id="password" class="input" type="password" autocomplete="current-password" placeholder="Masukkan password" required>
+            <button id="togglePassword" class="password-toggle" type="button" aria-label="Tampilkan password">Lihat</button>
+          </div>
+
+          <div id="candidateIdentity" class="candidate-identity hidden">
+            <div class="identity-note">Lengkapi identitas sebelum memilih paket ujian.</div>
+            <label for="candidateName">Nama Lengkap Peserta</label>
+            <input id="candidateName" class="input" autocomplete="name" placeholder="Contoh: Ahmad Fauzi">
+            <label for="candidateNumber">Nomor Ujian</label>
+            <input id="candidateNumber" class="input" inputmode="text" placeholder="Contoh: PMB001">
+          </div>
+
+          <button id="loginSubmitBtn" class="btn btn-primary full" type="submit">Lanjutkan</button>
           <div id="loginError" class="error" role="alert"></div>
         </form>
+
         <div class="hint info-list"><b>Informasi Ujian:</b>
           <ol>
             <li>Berdoalah sebelum mengerjakan ujian.</li>
-            <li>Tuliskan username dan password dengan benar.</li>
+            <li>Tuliskan identitas dengan benar.</li>
             <li>Bacalah setiap soal dengan teliti sebelum menjawab.</li>
             <li>Kerjakan soal secara mandiri dan jujur.</li>
             <li>Dilarang bekerja sama atau menggunakan AI.</li>
